@@ -384,31 +384,6 @@ Key `EngramConfig` fields:
 
 ---
 
-## Development
-
-```bash
-git clone https://github.com/Kaboom2025/engram
-cd engram
-pip install -e ".[dev]"
-
-# Run tests
-pytest tests/unit/ -v
-
-# Run with coverage
-pytest --cov=engram --cov-report=term-missing
-
-# Lint / format
-python -m ruff check src/ tests/
-python -m ruff format src/ tests/
-
-# Run demo
-python demo.py
-
-# Ingest your code
-python ingest_folder.py . --no-llm --compare "how does retrieval work?"
-
-# Frontend (React + Vite)
-cd web && npm install && npm run dev
 ```
 
 ---
